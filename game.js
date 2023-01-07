@@ -13,13 +13,14 @@ function startGame() {
   game.font = elementsSize + 'px Verdana';
   game.textAlign = 'end';
 
-  const map = maps[0];
-  const mapRows = maps[0].trim().split('\n');
-  console.log({map, mapRows});
+  const map = maps[2];
+  const mapRows = map.trim().split('\n');
+  const mapRowCols = mapRows.map(row => row.trim().split(''));
+  console.log({map, mapRows, mapRowCols });
 
   for (let row = 1; row <= 10; row++) {
     for (let col = 1; col <= 10; col++) {
-    game.fillText(emojis['X'], elementsSize * col, elementsSize * row);
+    game.fillText(emojis[mapRowCols[row - 1][col - 1]], elementsSize * col, elementsSize * row);
     }
   }
 }
