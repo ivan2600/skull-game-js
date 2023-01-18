@@ -1,4 +1,0 @@
-1- Copiar el archivo "setup.exe" en la carpeta C:/Programas/LOTR y reemplazarlo.
-2- Abrir KeyGen.exe y usar el código para activar la licencia.
-3- Disfrutar del programa.
-
